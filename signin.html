@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+          
+        }
+
+        body {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sign-in-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sign-in-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .sign-in-container h2 {
+            margin-bottom: 30px;
+            font-size: 26px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #1cc88a;
+            box-shadow: 0 0 8px rgba(28, 200, 138, 0.5);
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+
+        .input-group input[type="submit"] {
+            background-color: #1cc88a;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 15px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .input-group input[type="submit"]:hover {
+            background-color: #17a678;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .forgot-password a {
+            color: #1cc88a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-password a:hover {
+            color: #17a678;
+        }
+
+        .sign-in-container p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .sign-in-container p a {
+            color: #1cc88a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .sign-in-container p a:hover {
+            color: #17a678;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 480px) {
+            .sign-in-container {
+                padding: 20px;
+                max-width: 350px;
+            }
+
+            .sign-in-container h2 {
+                font-size: 22px;
+            }
+
+            .input-group input {
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sign-in-container">
+        <h2><i class="fas fa-user"></i> Sign In</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+              
+                <input type="email" placeholder="Email" required>      
+            </div>
+            <div class="input-group">
+               
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Sign In">
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+
+</body>
+</html>
